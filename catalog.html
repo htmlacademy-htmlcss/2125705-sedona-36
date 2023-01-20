@@ -51,34 +51,34 @@
     <!--Форма-->
     <section>
       <h1>Гостиницы Седоны</h1>
-      <form action="https://echo.htmlacademy.ru/">
+      <form action="https://echo.htmlacademy.ru/" method="post">
         <fieldset>
           <legend>Инфраструктура:</legend>
           <label>
-          <input type="checkbox" checked>Бассейн</label>
+          <input type="checkbox" name="pool" checked>Бассейн</label>
           <label>
-          <input type="checkbox" checked>Парковка</label>
+          <input type="checkbox" name="parking" checked>Парковка</label>
           <label>
-          <input type="checkbox">Wi-Fi</label>
+          <input type="checkbox" name="WiFi">Wi-Fi</label>
         </fieldset>
         <fieldset>
           <legend>Тип жилья</legend>
           <label>
-            <input type="checkbox" checked>Гостиница
+            <input type="checkbox" name="hotel" checked>Гостиница
           </label>
           <label>
-            <input type="checkbox">Мотель
+            <input type="checkbox" name="motel">Мотель
           </label>
           <label>
-            <input type="checkbox">Апартаменты
+            <input type="checkbox" name="apartmetns">Апартаменты
           </label>
         </fieldset>
         <fieldset>
           <legend>Стоимость,<span>₽</span></legend>
-          <label><input type="text" value="0">от</label>
-          <label><input type="text" value="9000">до</label>
+          <label><input type="text" name="min" value="0">от</label>
+          <label><input type="text" name="max" value="9000">до</label>
         </fieldset>
-        <input type="button" value="Применить">
+        <input type="submit" value="Применить">
         <button type="reset">Сбросить</button>
 
       </form>
@@ -147,9 +147,9 @@
       <section>
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form action="https://echo.htmlacademy.ru/">
-          <input type="text" value="Ваш e-mail">
-          <input type="button" value="Подписаться">
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <input type="text" name="email" placeholder="Ваш e-mail">
+          <input type="submit" name="subscribe" placeholder="Подписаться">
         </form>
       </section>
       <!--Контакты-->
