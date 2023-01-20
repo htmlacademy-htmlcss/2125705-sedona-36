@@ -50,36 +50,51 @@
     <main>
     <!--Форма-->
     <section>
+      <h1>Гостиницы Седоны</h1>
       <form action="https://echo.htmlacademy.ru/">
-        <h1>Гостиницы Седоны</h1>
-      <div>
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-      </div>
-      <div>
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-      </div>
-      <div>
-        <input type="text">
-        <input type="text">
-      </div>
-      <div>
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <label>
+          <input type="checkbox" checked>Бассейн</label>
+          <label>
+          <input type="checkbox" checked>Парковка</label>
+          <label>
+          <input type="checkbox">Wi-Fi</label>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья</legend>
+          <label>
+            <input type="checkbox" checked>Гостиница
+          </label>
+          <label>
+            <input type="checkbox">Мотель
+          </label>
+          <label>
+            <input type="checkbox">Апартаменты
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Стоимость,<span>₽</span></legend>
+          <label><input type="text" value="0">от</label>
+          <label><input type="text" value="9000">до</label>
+        </fieldset>
         <input type="button" value="Применить">
-        <input type="button" value="Сбросить">
-      </div>
+        <button type="reset">Сбросить</button>
+
       </form>
     </section>
     <!--Фильтры-->
     <section>
-      <h1 class="visually-hidden">Каталог</h1>
+      <h1 class="visually-hidden">Фильтры</h1>
       <form action="#">
         <h2>Найдено гостиниц: 38</h2>
         <ul>
-          <li></li>
-          <li></li>
+          <li>
+            <select name="sorting" size="1">
+              <option value="Сначала дешевые">Сначала дешевые
+              </option>
+            </select>
+          </li>
         </ul>
         <ul>
           <li><button></button></li>
@@ -90,40 +105,41 @@
     </section>
     <!--Гостиницы-->
     <section>
-    <ul>
-      <li>
-        <img src="#" alt="Amara Resort & Spa">
-        <h3>Amara Resort & Spa</h3>
-        <span></span>
-        <span></span>
-        <button></button>
-        <button></button>
-      </li>
-      <li>
-        <img src="#" alt="Villas at Poco Diablo">
-        <h3>Villas at Poco Diablo</h3>
-        <span></span>
-        <span></span>
-        <button></button>
-        <button></button>
-      </li>
-      <li>
-        <img src="#" alt="Desert Quail Inn">
-        <h3>Desert Quail Inn</h3>
-        <span></span>
-        <span></span>
-        <button></button>
-        <button></button>
-      </li>
-      <li>
-        <img src="#" alt="GreenTree Inn">
-        <h3>GreenTree Inn</h3>
-        <span></span>
-        <span></span>
-        <button></button>
-        <button></button>
-      </li>
-    </ul>
+      <h1 class="visually-hidden">Гостиницы</h1>
+      <ul>
+        <li>
+          <img src="#" alt="Amara Resort & Spa">
+          <h3>Amara Resort & Spa</h3>
+          <span></span>
+          <span></span>
+          <button>Подробнее</button>
+          <button>В избранное</button>
+        </li>
+        <li>
+          <img src="#" alt="Villas at Poco Diablo">
+          <h3>Villas at Poco Diablo</h3>
+          <span></span>
+          <span></span>
+          <button>Подробнее</button>
+          <button>В избранное</button>
+        </li>
+        <li>
+          <img src="#" alt="Desert Quail Inn">
+          <h3>Desert Quail Inn</h3>
+          <span></span>
+          <span></span>
+          <button>Подробнее</button>
+          <button>В избранное</button>
+        </li>
+        <li>
+          <img src="#" alt="GreenTree Inn">
+          <h3>GreenTree Inn</h3>
+          <span></span>
+          <span></span>
+          <button>Подробнее</button>
+          <button>В избранное</button>
+        </li>
+      </ul>
     </section>
     </main>
     <!--Подвал сайта-->
@@ -139,17 +155,18 @@
       <!--Контакты-->
       <section>
         <h2 class="visually-hidden">Контакты</h2>
-        <a href="#"><!--VK-->
+        <a href="https://vk.com/htmlacademy"><!--VK-->
           <img src="#" alt="Логотип VK">
         </a>
-        <a href="#"><!--Tg-->
+        <a href="https://t.me/htmlacademy"><!--Tg-->
           <img src="#" alt="Логотип Tg">
         </a>
-        <a href="#"><!--YT-->
+        <a href=" https://www.youtube.com/user/htmlacademyru"><!--YT-->
           <img src="#" alt="Логотип YT">
         </a>
-        <p>+7 (812) 812-12-12</p>
-        <a href="#">
+        <a href="tel:+7(812)8121212">+7 (812) 812-12-12
+        </a>
+        <a href="https://htmlacademy.ru/">
           <img src="#" alt="Логотип html academy">
         </a>
       </section>
