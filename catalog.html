@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <!--Шапка сайта-->
+    <header>
+      <!--Навигация-->
+      <nav class="navigation">
+        <ul>
+          <li>
+            <a class="logo">
+              <img src="index.html" alt="Логотип сайта городка Седона">
+            </a>
+          </li>
+          <li>
+            <a href="#">Главная
+            </a>
+          </li>
+          <li>
+            <a href="#">О Седоне
+            </a>
+          </li>
+          <li>
+            <a href="#">Гостиницы
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="visually-hidden">Избранное</span>
+            </a>
+          </li>
+          <li>
+            <a href="#"><!--Хочу сюда!-->
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--Основное содержание страницы-->
+    <main>
+    <!--Форма-->
+    <section class="search">
+      <h1>Гостиницы Седоны</h1>
+      <form action="https://echo.htmlacademy.ru/" method="post">
+        <ul class="breadcrumbs">
+          <li>
+            <a href="index.html"></a>
+          </li>
+          <li>
+            <a href="#">Гостиницы</a>
+          </li>
+        </ul>
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <label>
+          <input type="checkbox" name="pool" checked>Бассейн</label>
+          <label>
+          <input type="checkbox" name="parking" checked>Парковка</label>
+          <label>
+          <input type="checkbox" name="WiFi">Wi-Fi</label>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья</legend>
+          <label>
+            <input type="radio" name="type" value="hotel" checked>Гостиница
+          </label>
+          <label>
+            <input type="radio" name="type" value="motel">Мотель
+          </label>
+          <label>
+            <input type="radio" name="type" value="apartment">Апартаменты
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Стоимость,<span>₽</span></legend>
+          <label><input type="text" name="min" value="0">от</label>
+          <label><input type="text" name="max" value="9000">до</label>
+          <input type="range" min="0" max="12000">
+        </fieldset>
+        <input type="submit" value="Применить">
+        <button type="reset">Сбросить</button>
+      </form>
+    </section>
+    <!--Фильтры-->
+    <section class="filter">
+      <h2 class="visually-hidden">Фильтры
+      </h2>
+        <h3>Найдено гостиниц: 38
+        </h3>
+        <ul>
+          <li>
+            <select name="sorting" size="1">
+              <option value="Сначала дешевые">Сначала дешевые
+              </option>
+            </select>
+          </li>
+        </ul>
+        <ul>
+          <li><button type="button"></button></li>
+          <li><button type="button"></button></li>
+          <li><button type="button"></button></li>
+        </ul>
+    </section>
+    <!--Гостиницы-->
+    <section class="hotel">
+      <h2 class="visually-hidden">Гостиницы</h2>
+      <ul>
+        <li>
+          <img src="#" alt="Amara Resort & Spa">
+          <h3>Amara Resort & Spa</h3>
+          <span>Гостиница</span>
+          <span></span>
+          <button type="button">Подробнее</button>
+          <button type="button">В избранное</button>
+        </li>
+        <li>
+          <img src="#" alt="Villas at Poco Diablo">
+          <h3>Villas at Poco Diablo</h3>
+          <span>Гостиница</span>
+          <span></span>
+          <button type="button">Подробнее</button>
+          <button type="button">В избранное</button>
+        </li>
+        <li>
+          <img src="#" alt="Desert Quail Inn">
+          <h3>Desert Quail Inn</h3>
+          <span>Гостиница</span>
+          <span></span>
+          <button type="button">Подробнее</button>
+          <button type="button">В избранное</button>
+        </li>
+        <li>
+          <img src="#" alt="GreenTree Inn">
+          <h3>GreenTree Inn</h3>
+          <span>Гостиница</span>
+          <span></span>
+          <button type="button">Подробнее</button>
+          <button type="button">В избранное</button>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="#">1</a>
+        </li>
+        <li>
+          <a href="#">2</a>
+        </li>
+        <li>
+          <a href="#">3</a>
+        </li>
+        <li>
+          <a href="#">4</a>
+        </li>
+        <li>
+          <a href="#">...</a>
+        </li>
+        <li>
+          <a href="#">10</a>
+        </li>
+      </ul>
+    </section>
+    </main>
+    <!--Подвал сайта-->
+    <footer>
+      <section class="subscribe">
+        <h2>Подпишитесь на рассылку</h2>
+        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <input type="text" name="email" placeholder="Ваш e-mail">
+          <input type="submit" name="subscribe" value="Подписаться">
+        </form>
+      </section>
+      <!--Контакты-->
+      <ul class="contact">
+          <li>
+           <a href="https://vk.com/htmlacademy"><!--VK-->
+            <img src="#" alt="Логотип VK">
+           </a>
+          </li>
+          <li>
+           <a href="https://t.me/htmlacademy"><!--Tg-->
+            <img src="#" alt="Логотип Tg">
+           </a>
+          </li>
+          <li>
+           <a href=" https://www.youtube.com/user/htmlacademyru"><!--YT-->
+            <img src="#" alt="Логотип YT">
+           </a>
+          </li>
+      </ul>
+      <a href="tel:+7(812)8121212">+7 (812) 812-12-12
+      </a>
+      <a href="https://htmlacademy.ru/">
+        <img src="#" alt="Логотип html academy">
+      </a>
+    </footer>
+  </body>
+</html>
