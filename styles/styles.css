@@ -1,0 +1,331 @@
+/*Подключение шрифтов*/
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+/*Основные правила*/
+html {
+    background-color: #f2f2f2;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+body {
+    font-family: "PT Sans";
+    font-size: 30px;
+    line-height: 36px;
+    background-color: white;
+    color: #000000;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.button {
+    font-size: 20px;
+    line-height: 36px;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    box-sizing: border-box;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/*Убирает базовый стиль ссылок, и добавляет черный цвет тексту*/
+.navigation-list a,
+.contacts a,
+.pages li:first-child a,
+.pages li:nth-last-child(2) a,
+.number {
+    text-decoration: none;
+    color: #000000;
+}
+/*Убирает базовый стиль списка*/
+.navigation-list, .custom-menu,
+.advantages-list, .contacts-list,
+.features-list, .view-list,
+.pages, .hotels, .breadcrumbs {
+    list-style-type: none;
+    padding: 0;
+}
+
+/*Шапка*/
+.navigation {
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: none;
+
+}
+.navigation-list, .custom-menu, .features-list, .contacts-list, .view-list, .pages {
+    display: flex;
+}
+.favorites-number {
+    color: white;
+    background: #7DB54F;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px
+}
+
+.button-want {
+    background: #756157;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    width: 160px;
+    height: 36px;
+    padding: 8px 0;
+}
+
+/*Заголовки и абзацы*/
+.title {
+    font-size: 30px;
+    line-height: 36px;
+    padding: 69px 0;
+}
+.title-text {
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: none;
+    font-weight: 400;
+}
+.subtitle {
+    font-size: 24px;
+    line-height: 28px;
+}
+.subtitle-text {
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: none;
+    font-weight: 400;
+}
+.advantages-list li:first-child,
+.advantages-list li:last-child {
+    background: #82B3D3;
+    color: white;
+    font-weight: 400;
+}
+.advantages-list li:nth-child(4) {
+    background: rgba(131, 179, 211, 0.2);
+}
+.advantages-list li:nth-child(2n+1):not(:last-child):not(:first-child) {
+    background: rgba(131, 179, 211, 0.12);
+}
+.features li:first-child,
+.features li:last-child {
+    background: rgba(131, 179, 211, 0.12);
+}
+
+
+/*О Седоне*/
+.welcome {
+    background-image: url("../images/jpg/index-background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+/*Заинтересовались*/
+.button-offer {
+    display: block;
+    background: #756157;
+    border-radius: 4px;
+    width: 376px;
+    height: 52px;
+    padding: 8px 0;
+}
+
+/*Подпишитесь*/
+.subscribe {
+    background-image: url("../images/jpg/photo_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+/*Главный footer*/
+.number {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.button-subscribe {
+    background: #82B3D3;
+    border-radius: 0 4px 4px 0;
+    height: 52px;
+    width: 232px;
+}
+.mail {
+    border: none;
+    background: #F2F2F2;
+    border-radius: 4px 0 0 4px;
+    padding: 14px 20px;
+    margin-right: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    width: 452px;
+    height: 52px;
+}
+
+/*Вторая страница*/
+.search {
+    background-image: url("/images/jpg/index-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 60px;
+    line-height: 78px;
+    color: white;
+    text-transform: none;
+    font-weight: 400;
+}
+.breadcrumbs {
+    font-size: 16px;
+    line-height: 21px;
+}
+.search a {
+    text-decoration: none;
+    color: white
+}
+.filter {
+    font-size: 18px;
+    line-height: 23px;
+}
+.types-filters {
+    font-size: 20px;
+    line-height: 24px;
+}
+.price {
+    font-weight: 700;
+}
+.button-filter {
+    width: 191px;
+    height: 36px;
+    background: #82B3D3;
+    border-radius: 4px;
+}
+.button-reset {
+    width: 191px;
+    height: 36px;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: transparent;
+}
+.view-item {
+    box-sizing: border-box;
+    border: 2px solid #E5E5E5;
+    border-radius: 4px;
+    width: 48px;
+    height: 48px;
+}
+.view-list select {
+    width: 292px;
+    height: 49px;
+    padding: 14px 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+.button-icon {
+    background-color: white;
+    padding: 0;
+    width: 44px;
+    height: 44px;
+}
+.view-list li:nth-child(2) {
+    border: 2px solid #000000;
+}
+.all-hotels {
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: none;
+    font-weight: 400;
+}
+.hotel-name {
+    font-size: 24px;
+    line-height: 28px;
+}
+.button-detail {
+    background: #756157;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 20px;
+    width: 140px;
+    height: 36px;
+}
+.button-favorite {
+    width: 140px;
+    height: 36px;
+    padding: 8px 0;
+    background: #82B3D3;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 20px;
+}
+.rating {
+    font-size: 16px;
+    line-height: 20px;
+}
+.pages li {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    font-size: 20px;
+    line-height: 36px;
+    background: #82B3D3;
+}
+.pages a {
+    color: #FFFFFF;
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    display: block;
+    box-sizing: border-box;
+    padding: 12px 0;
+    font-weight: 700;
+}
+.pages li:first-child a {
+    background: #F2F2F2;
+}
+.pages li:nth-last-child(2) a {
+    padding: 12px 22px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    background-color: white;
+}
+
+/*footer 2 страницы*/
+.subscribe-catalog {
+    background-color: white;
+}
