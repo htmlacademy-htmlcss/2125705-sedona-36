@@ -38,10 +38,10 @@ body {
     line-height: 36px;
     color: white;
     font-weight: 700;
-    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     border: none;
+    box-sizing: border-box;
 }
 
 .visually-hidden {
@@ -55,7 +55,7 @@ body {
     overflow: hidden;
 }
 
-/*Убирает базовый стиль ссылок + черный цвет текста*/
+/*Убирает базовый стиль ссылок, и добавляет черный цвет тексту*/
 .navigation-list a,
 .contacts a,
 .pages li:first-child a,
@@ -67,8 +67,8 @@ body {
 /*Убирает базовый стиль списка*/
 .navigation-list, .custom-menu,
 .advantages-list, .contacts-list,
-.features-list, .view,
-.pages, .hotels {
+.features-list, .view-list,
+.pages, .hotels, .breadcrumbs {
     list-style-type: none;
     padding: 0;
 }
@@ -78,6 +78,10 @@ body {
     font-size: 20px;
     line-height: 24px;
     text-transform: none;
+
+}
+.navigation-list, .custom-menu, .features-list, .contacts-list, .view-list, .pages {
+    display: flex;
 }
 .favorites-number {
     color: white;
@@ -86,9 +90,7 @@ body {
     font-size: 10px;
     line-height: 10px
 }
-.welcome {
-    margin: 69px;
-}
+
 .button-want {
     background: #756157;
     border-radius: 4px;
@@ -96,6 +98,9 @@ body {
     font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
+    width: 160px;
+    height: 36px;
+    padding: 8px 0;
 }
 
 /*Заголовки и абзацы*/
@@ -110,13 +115,6 @@ body {
     text-transform: none;
     font-weight: 400;
 }
-.title_contrast {
-    color: white;
-}
-.title-text_contrast {
-    color: white;
-    font-weight: 400;
-}
 .subtitle {
     font-size: 24px;
     line-height: 28px;
@@ -127,19 +125,16 @@ body {
     text-transform: none;
     font-weight: 400;
 }
-.subtitle_contrast {
-    color: white;
+.advantages-list li:first-child,
+.advantages-list li:last-child {
     background: #82B3D3;
-}
-.subtitle-text_contrast {
     color: white;
-    background: #82B3D3;
     font-weight: 400;
 }
 .advantages-list li:nth-child(4) {
     background: rgba(131, 179, 211, 0.2);
 }
-.advantages-list li:nth-child(2n+1):not(:first-child) {
+.advantages-list li:nth-child(2n+1):not(:last-child):not(:first-child) {
     background: rgba(131, 179, 211, 0.12);
 }
 .features li:first-child,
@@ -147,25 +142,31 @@ body {
     background: rgba(131, 179, 211, 0.12);
 }
 
+
 /*О Седоне*/
-.advantages {
-    background-image: url("/../images/jpg/index-background.jpg");
+.welcome {
+    background-image: url("../images/jpg/index-background.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
 }
 
 /*Заинтересовались*/
 .button-offer {
+    display: block;
     background: #756157;
     border-radius: 4px;
+    width: 376px;
+    height: 52px;
+    padding: 8px 0;
 }
 
 /*Подпишитесь*/
 .subscribe {
-    background-image: url(/images/jpg/photo_2.jpg);
+    background-image: url("../images/jpg/photo_2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
+    color: white;
 }
 
 /*Главный footer*/
@@ -179,16 +180,26 @@ body {
 .button-subscribe {
     background: #82B3D3;
     border-radius: 0 4px 4px 0;
+    height: 52px;
+    width: 232px;
 }
 .mail {
+    border: none;
+    background: #F2F2F2;
+    border-radius: 4px 0 0 4px;
+    padding: 14px 20px;
+    margin-right: 0;
+    box-sizing: border-box;
     font-weight: 400;
     font-size: 18px;
-    line-height: 24px
+    line-height: 24px;
+    width: 452px;
+    height: 52px;
 }
 
 /*Вторая страница*/
 .search {
-    background-image: url(/images/jpg/index-background.jpg);
+    background-image: url("/images/jpg/index-background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     font-size: 60px;
@@ -217,18 +228,42 @@ body {
     font-weight: 700;
 }
 .button-filter {
+    width: 191px;
+    height: 36px;
     background: #82B3D3;
     border-radius: 4px;
 }
 .button-reset {
+    width: 191px;
+    height: 36px;
+    border-radius: 4px;
     font-size: 16px;
     line-height: 20px;
     background-color: transparent;
 }
-.view select {
+.view-item {
+    box-sizing: border-box;
+    border: 2px solid #E5E5E5;
+    border-radius: 4px;
+    width: 48px;
+    height: 48px;
+}
+.view-list select {
+    width: 292px;
+    height: 49px;
+    padding: 14px 20px;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
+}
+.button-icon {
+    background-color: white;
+    padding: 0;
+    width: 44px;
+    height: 44px;
+}
+.view-list li:nth-child(2) {
+    border: 2px solid #000000;
 }
 .all-hotels {
     font-size: 18px;
@@ -245,24 +280,49 @@ body {
     border-radius: 4px;
     font-size: 16px;
     line-height: 20px;
+    width: 140px;
+    height: 36px;
 }
 .button-favorite {
+    width: 140px;
+    height: 36px;
+    padding: 8px 0;
     background: #82B3D3;
     border-radius: 4px;
     font-size: 16px;
     line-height: 20px;
 }
 .rating {
-font-size: 16px;
-line-height: 20px;
+    font-size: 16px;
+    line-height: 20px;
 }
-.pages a {
+.pages li {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
     font-size: 20px;
     line-height: 36px;
     background: #82B3D3;
-    border-radius: 4px;
+}
+.pages a {
     color: #FFFFFF;
     text-decoration: none;
+    width: 60px;
+    height: 60px;
+    display: block;
+    box-sizing: border-box;
+    padding: 12px 0;
+    font-weight: 700;
+}
+.pages li:first-child a {
+    background: #F2F2F2;
+}
+.pages li:nth-last-child(2) a {
+    padding: 12px 22px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    background-color: white;
 }
 
 /*footer 2 страницы*/
