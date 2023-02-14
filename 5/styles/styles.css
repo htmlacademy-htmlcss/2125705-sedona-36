@@ -182,13 +182,16 @@ body {
 .title {
     font-size: 30px;
     line-height: 36px;
-    margin: 0;
+    margin: 0 auto;
+    max-width: 620px;
 }
 .title-text {
     font-size: 22px;
     line-height: 26px;
     text-transform: none;
     font-weight: 400;
+    margin: 0 auto;
+    max-width: 651px;
 }
 .subtitle {
     font-size: 24px;
@@ -216,7 +219,7 @@ body {
 /*Заинтересовались*/
 .offer {
     box-sizing: border-box;
-    padding: 0 344px;
+    padding: 0 304px;
 }
 .button-offer {
     display: block;
@@ -225,6 +228,7 @@ body {
     width: 376px;
     height: 52px;
     padding: 8px 0;
+    margin: 0 auto;
 }
 /*Главный footer*/
 /*Подпишитесь*/
@@ -238,7 +242,11 @@ body {
     display: block;
     overflow: hidden;
     box-sizing: border-box;
-    padding: 0 256px;
+}
+.form-subscribe {
+    display: flex;
+    max-width: 684px;
+    margin: 0 auto;
 }
 .mail {
     border: none;
@@ -250,14 +258,14 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-    width: 450px;
+    width: 452px;
     height: 52px;
 }
 .button-subscribe {
     background: #82B3D3;
     border-radius: 0 4px 4px 0;
     height: 52px;
-    width: 230px;
+    width: 232px;
 }
 
 /* Контакты */
@@ -310,6 +318,9 @@ body {
 }
 .title-search {
     margin: 35px 0 8px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px
 }
 .breadcrumbs {
     font-size: 16px;
@@ -359,6 +370,12 @@ body {
 }
 
 /* Сортировка */
+.title-sorting {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
 .sorting {
     display: flex;
     justify-content: space-between;
@@ -479,6 +496,4 @@ body {
 /*footer каталога*/
 .subscribe-catalog {
     background-color: white;
-    box-sizing: border-box;
-    padding: 0 256px;
 }
