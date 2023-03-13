@@ -89,17 +89,17 @@
         <p class="title-text">Опытный персонал и качественное обслуживание!</p>
         <ul class="features-list">
           <li>
-            <img src="images/svg/home.svg" width="75" height="72" alt="Домик.">
+            <!-- <img src="images/svg/home.svg" width="75" height="72" alt="Домик."> -->
             <h3 class="subtitle">Жилье</h3>
             <p class="subtitle-text">Рекомендуем пожить <br> в настоящем мотеле, <br> всё как в кино!</p>
           </li>
           <li>
-            <img src="images/svg/food.svg" width="74" height="70" alt="Гамбургер.">
+            <!-- <img src="images/svg/food.svg" width="74" height="70" alt="Гамбургер."> -->
             <h3 class="subtitle">Еда</h3>
             <p class="subtitle-text">Всегда заказывайте <br> топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li>
-            <img src="images/svg/souvenir.svg" width="64" height="76" alt="Подарок.">
+            <!-- <img src="images/svg/souvenir.svg" width="64" height="76" alt="Подарок."> -->
             <h3 class="subtitle">Сувениры</h3>
             <p class="subtitle-text">Не только китайского, <br> но и настоящего местного производства!</p>
           </li>
@@ -179,9 +179,17 @@
           <input class="data-exit" type="text" placeholder="Укажите дату" value="1 сентября 2023">
           <span class="grownup">Взрослые:</span>
           <div class="grownup-grup">
-            <button class="minus"></button>
+            <button class="minus">
+              <svg width="14" height="2" viewBox="0 0 14 2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0L0 2L14 2V0L0 0Z"/>
+              </svg>
+            </button>
             <input class="grownup-number" type="number" maxlength="2" value="2">
-            <button class="plus"></button>
+            <button class="plus">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
+              </svg>
+            </button>
           </div>
           <span class="children-label-icon">
             <label class="children" for="children-number">Дети:</label>
@@ -196,9 +204,17 @@
             </span>
           </span>
           <div class="children-grup">
-            <button class="minus"></button>
+            <button class="minus">
+              <svg width="14" height="2" viewBox="0 0 14 2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0L0 2L14 2V0L0 0Z"/>
+                </svg>
+            </button>
             <input class="children-number" type="number" maxlength="2" value="2">
-            <button class="plus"></button>
+            <button class="plus">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
+              </svg>
+            </button>
           </div>
           <button class="modal-button" type="submit">Найти</button>
         </form>
