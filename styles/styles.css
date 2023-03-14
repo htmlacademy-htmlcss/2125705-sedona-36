@@ -83,8 +83,9 @@ body {
 .logo {
     display: block;
     margin-right: 28px;
-    margin-bottom: -10px;
+    margin-bottom: -6px;
     z-index: 3;
+    line-height: 0;
 }
 .logo:hover {
     opacity: 0.6;
@@ -145,10 +146,15 @@ body {
 }
 .custom-menu a {
     display: block;
-    padding: 23px 2px 0 0;
     min-width: 44px;
     min-height: 64px;
     line-height: 0;
+}
+.custom-menu li:nth-child(2) a {
+    padding: 24px 2px 0 0;
+}
+.custom-menu a:first-child {
+    padding: 23px 2px 0 2px;
 }
 .custom-menu li:nth-child(2) {
     position: relative;
@@ -174,7 +180,7 @@ body {
     padding: 5px 5px 5px 5px;
     position: absolute;
     top: 11px;
-    right: 4px;
+    right: 5px;
     min-width: 20px;
     height: 20px;
 }
@@ -185,7 +191,7 @@ body {
     line-height: 20px;
     padding: 0 34px;
     padding-top: 9px;
-    padding-bottom: 8px;
+    padding-bottom: 7px;
     margin: 0 0 0 20px;
 }
 .custom-menu button:hover,
@@ -204,7 +210,7 @@ body {
     background-image: url("../images/jpg/index-background.jpg");
     background-color: #82b3d3;
     background-repeat: no-repeat;
-    padding: 51px 0 72px;
+    padding: 51px 0 74px 0;
     background-size: cover;
     position: relative;
     width: 100%;
@@ -222,13 +228,13 @@ body {
 }
 /* Преимущества */
 .advantages {
-    padding-top: 71px;
+    padding-top: 70px;
 }
 .advantages .title {
     margin-bottom: 25px;
 }
 .advantages .title-text {
-    padding-bottom: 69px;
+    padding-bottom: 70px;
 }
 .advantages-list {
     display: flex;
@@ -242,19 +248,19 @@ body {
     font-weight: 400;
     width: 400px;
     box-sizing: border-box;
-    padding: 102px 85px;
+    padding: 102px 85px 102px 85px;
 }
 .advantages-list li:nth-child(4) {
     background: rgba(131, 179, 211, 0.2);
     width: 400px;
     box-sizing: border-box;
-    padding: 113px 85px;
+    padding: 112px 85px 113px 85px;
 }
 .advantages-list li:nth-child(2n+1):not(:last-child):not(:first-child) {
     background: rgba(131, 179, 211, 0.12);
     width: 400px;
     box-sizing: border-box;
-    padding: 113px 85px;
+    padding: 112px 85px 112px 85px;
 }
 .advantages-list li:nth-child(2) img,
 .advantages-list li:nth-child(6) img {
@@ -322,17 +328,17 @@ body {
 .features li:first-child {
     background-image: url("../images/svg/home.svg");
     background-repeat: no-repeat;
-    background-position: center 25%;
+    background-position: center 26%;
 }
 .features li:nth-child(2){
     background-image: url("../images/svg/food.svg");
     background-repeat: no-repeat;
-    background-position: center 25%;
+    background-position: center 26%;
 }
 .features li:last-child {
     background-image: url("../images/svg/souvenir.svg");
     background-repeat: no-repeat;
-    background-position: center 25%;
+    background-position: center 26%;
 }
 
 /*Заголовки и абзацы*/
@@ -367,7 +373,7 @@ body {
 /*Заинтересовались*/
 .offer {
     box-sizing: border-box;
-    padding: 96px 304px;
+    padding: 97px 304px 96px 304px;
 }
 .offer p, .subscribe p, .subscribe-catalog p {
     margin-bottom: 54px;
@@ -406,6 +412,9 @@ body {
     padding-top: 96px;
     padding-bottom: 104px;
 }
+.subscribe p {
+    margin-bottom: 55px;
+}
 .form-subscribe {
     display: flex;
     max-width: 684px;
@@ -416,11 +425,11 @@ body {
     border: none;
     background: #f2f2f2;
     border-radius: 4px 0 0 4px;
-    padding: 14px 20px;
+    padding: 4px 0 0 20px;
     margin-right: 0;
     box-sizing: border-box;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 24px;
     width: 452px;
     height: 52px;
@@ -471,6 +480,12 @@ body {
     height: 100%;
     color: #83b3d3;
 }
+.contacts-items li:last-child svg {
+    padding: 16px 0 0 1px;
+}
+.contacts-items li:first-child svg {
+    padding: 17px 0 0 0;
+}
 .contacts-items a:hover svg,
 .contacts-items a:focus svg {
     color: #68a2ca;
@@ -487,7 +502,7 @@ body {
     line-height: 40px;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 14px;
+    padding-top: 10px;
 }
 .number:hover,
 .number:focus {
@@ -498,7 +513,7 @@ body {
 }
 .htmlacademy {
     color: #000000;
-    padding-top: 19px;
+    padding-top: 17px;
 }
 .htmlacademy:hover,
 .htmlacademy:focus {
@@ -537,7 +552,7 @@ body {
     font-size: 16px;
     line-height: 21px;
     display: flex;
-    margin-bottom: 39px;
+    margin-bottom: 40px;
     gap: 10px;
 }
 .breadcrumbs>li:nth-child(2) {
@@ -578,7 +593,7 @@ body {
     margin: 0;
 }
 .filter:first-child {
-    margin-right: 67px;
+    margin-right: 71px;
 }
 .filter>label {
     font-size: 18px;
@@ -595,6 +610,7 @@ body {
     text-align: left;
     margin-bottom: 32px;
     font-weight: 700;
+    padding: 0;
 }
 .check-square {
     position: absolute;
@@ -710,7 +726,7 @@ body {
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 2px;
     margin: 0;
-    margin-top: 26px;
+    margin-top: 30px;
 }
 .range-bar {
     position: absolute;
@@ -750,7 +766,6 @@ body {
 /* Кнопки справа */
 .buttons-right {
     width: 191px;
-
 }
 /* кнопка "Применить" */
 .button-filter {
@@ -775,7 +790,10 @@ body {
 }
 /* кнопка "Сбросить"*/
 .button-reset {
-    padding: 6px 57px;
+    padding-top: 6px;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-bottom: 6px;
     border-radius: 4px;
     border: 3px solid transparent;
     font-size: 16px;
@@ -829,7 +847,7 @@ body {
     border-radius: 4px;
     background-image: url("../images/svg/vector_catalog.svg");
     background-repeat: no-repeat;
-    background-position: right 20px center;
+    background-position: right 19px center;
     margin-left: auto;
     margin-right: 70px;
 }
@@ -912,11 +930,11 @@ body {
     font-size: 24px;
     line-height: 28px;
     text-align: left;
-    padding-left: 20px;
     grid-column: span 2;
     width: 300px;
     margin: 0;
     padding: 0;
+
 }
 .hotel-type {
     width: 140px;
@@ -1026,7 +1044,7 @@ body {
     background: #f2f2f2;
 }
 .pages li:nth-last-child(2) a {
-    padding: 12px 22px;
+    padding: 16px 22px;
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
@@ -1051,7 +1069,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    display: none;
+    display: flex;
     width: 100%;
     height: 100%;
     background: rgba(242, 242, 242, 0.8);
@@ -1095,7 +1113,7 @@ body {
     outline: none;
 }
 .modal-title {
-    font-size: 24px;
+    font-size: 30px;
     line-height: 36px;
     margin: 0;
     margin-bottom: 64px;
@@ -1109,13 +1127,21 @@ body {
     line-height: 24px;
     text-transform: capitalize;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(137px, 1fr));
-    row-gap: 48px;
+    grid-template-columns: 120px 110px 157px 139px;
+    gap: 48px 17px;
+    align-items: center;
 }
 .arrival, .grownup, .exit, .children {
     display: block;
     text-align: left;
-    padding: 12px 0;
+    position: relative;
+
+}
+.grownup {
+    padding-bottom: 2px;
+}
+.grownup-number, .children-number  {
+    padding: 15px 5px 13px 6px;
 }
 .data-arrival, .data-exit {
     grid-column: span 3;
@@ -1124,7 +1150,7 @@ body {
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: 700;
-    padding: 12px 20px;
+    padding: 13px 60px 11px 20px;
     border: none;
     background: #f2f2f2;
     border-radius: 4px;
@@ -1153,22 +1179,21 @@ body {
 }
 .children {
     position: relative;
+    margin-right: 2px;
     margin-left: 0;
+
 }
 .children-label-icon {
     position: relative;
-    /* padding-right: 26px; */
-    margin-right: 10px;
-    justify-self: center;
+    display: flex;
+    justify-self: flex-end;
 }
 .tooltip {
-    position: absolute;
     width: 26px;
     height: 26px;
     margin-left: 10px;
-    margin-right: 46px;
-    top: 25%;
-    right: -180%;
+    top: 2%;
+    left: 149%;
 }
 .tooltip-button {
     border: none;
@@ -1197,15 +1222,14 @@ body {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     margin: 0;
-    padding: 15px 22px 18px;
+    padding: 20px 18px 23px 22px;
     width: 256px;
     text-align: left;
     box-sizing: border-box;
     display: block;
     position: absolute;
-    margin-top: 15px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-top: 16px;
+    transform: translateX(-45%) translateY(-1px);
     z-index: 1;
 }
 .tooltip-button:hover + .tooltip-text,
@@ -1220,8 +1244,8 @@ body {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    top: -8%;
-    left: 47%;
+    top: -6%;
+    left: 46%;
 }
 .grownup-number, .children-number {
     display: block;
@@ -1234,10 +1258,10 @@ body {
     background: #f2f2f2;
     text-align: center;
     margin: 0;
-    padding: 14px 5px;
     height: min-content;
     width: 31px;
     position: relative;
+    box-sizing: border-box;
 }
 .grownup-number::-webkit-outer-spin-button,
 .grownup-number::-webkit-inner-spin-button,
@@ -1264,6 +1288,7 @@ body {
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
     cursor: pointer;
+    padding: 14px 8px 20px;
 }
 .minus svg, .plus svg {
     opacity: 0.3;
@@ -1274,6 +1299,7 @@ body {
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     cursor: pointer;
+    padding: 14px 7px;
 }
 .minus:hover svg,
 .plus:hover svg {
@@ -1302,13 +1328,13 @@ body {
 }
 .signature-arrival {
     margin-top: 4px;
-    left: 235px;
+    left: 227px;
     top: 212px;
     color: #ff5757;
 }
 .signature-exit {
     margin-top: 4px;
-    left: 235px;
+    left: 227px;
     top: 308px;
 }
 .modal-button {
