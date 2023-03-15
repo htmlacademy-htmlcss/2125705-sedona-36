@@ -551,11 +551,11 @@ body {
 .contacts-items--vk svg {
     padding: 17px 0 0 0;
 }
-.contacts-items a:hover svg,
-.contacts-items a:focus svg {
+.contacts-items-link:hover svg,
+.contacts-items-link:focus svg {
     color: #68a2ca;
 }
-.contacts-items a:active svg {
+.contacts-items-link:active svg {
     color: rgba(104, 162, 202, 0.3);
 }
 .contacts-items svg {
