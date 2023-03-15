@@ -71,8 +71,8 @@ body {
 /*Убирает базовый стиль ссылок, и добавляет черный цвет тексту*/
 .navigation-list a,
 .contacts a,
-.pages li:first-child a,
-.pages li:nth-last-child(2) a,
+.page-first a,
+.page-renultimate a,
 .number {
     text-decoration: none;
     color: #000000;
@@ -178,13 +178,13 @@ body {
     line-height: 0;
     color: #000000;
 }
-.custom-menu li:nth-child(2) a {
+.custom-menu-heart a {
     padding: 24px 2px 0 0;
 }
-.custom-menu a:first-child {
+.custom-menu-loupe a {
     padding: 23px 2px 0 2px;
 }
-.custom-menu li:nth-child(2) {
+.custom-menu-heart {
     position: relative;
 }
 .custom-menu a:hover,
@@ -195,7 +195,7 @@ body {
     opacity: 0.3;
 }
 /* Счетчик лайков */
-.custom-menu li:nth-of-type(2)::after {
+.custom-menu-heart::after {
     content: "12";
     color: #ffffff;
     font-weight: 400;
@@ -299,23 +299,23 @@ body {
     padding: 112px 85px 112px 85px;
 }
 .advantages-img {
-    width: 800px;
     display: inline-block;
     vertical-align: middle;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
 }
 .advantages-img img {
     display: block;
+    width: 800px;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .advantages-list .subtitle-text {
     position: relative;
 }
 /* В 1 и 7 ячейку добавляет элемент между заголовков и текстом */
-.advantages-list li:first-of-type p::before,
-.advantages-list li:last-of-type p::before {
+.advantages-item--contrast p::before,
+.advantages-item--contrast p::before {
     position: absolute;
     content: "";
     left: 50%;
@@ -328,8 +328,8 @@ body {
             transform: translateX(-50%);
 }
 /* В 3-5 ячейку добавляет элемент между заголовков и текстом */
-.advantages-list li:nth-child(4) p::before,
-.advantages-list li:nth-child(2n+1):not(:last-child):not(:first-child) p::before{
+.advantages-item p::before,
+.advantages-item--darker p::before{
     position: absolute;
     content: "";
     left: 50%;
@@ -545,10 +545,10 @@ body {
     height: 100%;
     color: #83b3d3;
 }
-.contacts-items li:last-child svg {
+.contacts-items--yt svg {
     padding: 16px 0 0 1px;
 }
-.contacts-items li:first-child svg {
+.contacts-items--vk svg {
     padding: 17px 0 0 0;
 }
 .contacts-items a:hover svg,
@@ -1182,12 +1182,14 @@ body {
 }
 .page-first a {
     background: #f2f2f2;
+    color: #000000;
 }
 .page-renultimate a {
     padding: 16px 22px;
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
+    color: #000000;
     background-color: #ffffff;
 }
 .page-normal a:hover,
