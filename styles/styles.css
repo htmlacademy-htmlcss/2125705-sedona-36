@@ -19,7 +19,7 @@ html {
     height: 100%;
 }
 body {
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     font-size: 30px;
     line-height: 36px;
     background-color: #ffffff;
@@ -45,7 +45,7 @@ body {
             flex-grow: 1;
 }
 .button {
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     font-size: 20px;
     line-height: 36px;
     color: #ffffff;
@@ -792,7 +792,7 @@ body {
 .price-min, .price-max {
     height: 48px;
     width: 143px;
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
@@ -945,7 +945,7 @@ body {
     max-width: 500px;
 }
 .sorting select {
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
@@ -1180,21 +1180,21 @@ body {
     background: #82b3d3;
     text-decoration: none;
 }
-.pages li:first-child a {
+.page-first a {
     background: #f2f2f2;
 }
-.pages li:nth-last-child(2) a {
+.page-renultimate a {
     padding: 16px 22px;
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
     background-color: #ffffff;
 }
-.pages li:not(:first-child):not(:nth-last-child(2)) a:hover,
-.pages li:not(:first-child):not(:nth-last-child(2)) a:focus {
+.page-normal a:hover,
+.page-normal a:focus {
     background-color: #68a2ca;
 }
-.pages li:not(:first-child):not(:nth-last-child(2)) a:active {
+.page-normal a:active {
     background-color: #82b3d3;
     color: rgba(255, 255, 255, 0.3);
 }
@@ -1264,7 +1264,7 @@ body {
 }
 /* Форма */
 .modal-form {
-    font-family: 'PT Sans';
+    font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -1289,7 +1289,7 @@ body {
     grid-column: span 3;
     font-size: 18px;
     line-height: 24px;
-    font-family: 'PT Sans';
+    font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: 700;
     padding: 13px 60px 11px 20px;
@@ -1332,7 +1332,7 @@ body {
     margin: 0;
     padding: 0;
     position: absolute;
-    font-family: 'PT Sans';
+    font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1346,7 +1346,7 @@ body {
 }
 .grownup-number, .children-number {
     display: block;
-    font-family: 'PT Sans';
+    font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -1519,7 +1519,7 @@ body {
     background: #83b3d3;
     border-radius: 10px;
     color: #ffffff;
-    font-family: 'PT Sans';
+    font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
